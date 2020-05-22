@@ -5,7 +5,7 @@ from rest_framework.views import APIView
 from rest_framework import generics
 
 from rest_framework.parsers import JSONParser
-from rest_framework.parsers import FileUploadParser
+from rest_framework.parsers import MultiPartParser
 
 from rest_framework.pagination import PageNumberPagination
 
@@ -26,9 +26,9 @@ class InventoryListView(generics.ListAPIView):
 
 
 class InventoryCreateView(APIView):
-	parser_classes = (FileUploadParser,)
+	parser_classes = (MultiPartParser,JSONParser)
 	def post(self,request):
-		post_data = JSONParser().parse(request)
+		post_data = request.data
 		print(post_data)
 		serializer = InventorySerializer(data = post_data)
 		if serializer.is_valid():
@@ -38,7 +38,7 @@ class InventoryCreateView(APIView):
 			return Response(serializer.error_messages,status=400)
 
 class InventoryGetDeleteUpdateView(APIView):
-	parser_classes = (FileUploadParser,)
+	parser_classes = (MultiPartParser,JSONParser)
 
 	def get_object(self,item_id):
 		item = Inventory.objects.filter(id = item_id).first()

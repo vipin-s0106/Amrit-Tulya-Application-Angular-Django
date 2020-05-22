@@ -11,6 +11,7 @@ import { BadRequestComponent } from './bad-request/bad-request.component'
 
 
 
+
 const routes: Routes = [
   {
     path: '',
@@ -54,6 +55,6 @@ export const RoutingComponent = [
   AddItemComponent,
   HomeComponent,
   PageNotFoundComponent,
-  BadRequestComponent
+  BadRequestComponent,
 ]
 

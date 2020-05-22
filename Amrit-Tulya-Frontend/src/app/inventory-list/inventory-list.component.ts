@@ -2,7 +2,6 @@ import { Component, OnInit } from '@angular/core';
 
 import { InventoryService } from '../services/inventory.service'
 import { ActivatedRoute, Router } from '@angular/router';
-import { BadRequestComponent } from '../bad-request/bad-request.component';
 
 @Component({
   selector: 'app-inventory-list',

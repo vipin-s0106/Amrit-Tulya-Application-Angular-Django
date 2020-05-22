@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d8857817-9985-4494-b663-d4a1e811729f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amrit-Tulya-Frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Amrit-Tulya-Frontend/src/app/app-routing.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amrit-Tulya-Frontend/src/app/app.component.css" beforeDir="false" afterPath="$PROJECT_DIR$/Amrit-Tulya-Frontend/src/app/app.component.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amrit-Tulya-Frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Amrit-Tulya-Frontend/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amrit-Tulya-Frontend/src/app/app.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Amrit-Tulya-Frontend/src/app/app.module.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amrit-Tulya-Frontend/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Amrit-Tulya-Frontend/src/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Amrit_Tulya_Backend/Amrit_Tulya_Backend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Amrit_Tulya_Backend/Amrit_Tulya_Backend/settings.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Amrit_Tulya_Backend/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Amrit_Tulya_Backend/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amrit_Tulya_Backend/inventory/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Amrit_Tulya_Backend/inventory/models.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Amrit_Tulya_Backend/inventory/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Amrit_Tulya_Backend/inventory/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

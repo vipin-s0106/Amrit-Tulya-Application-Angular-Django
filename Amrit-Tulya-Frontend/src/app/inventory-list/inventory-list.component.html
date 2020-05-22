@@ -1,4 +1,4 @@
-<div class="container padding-bottom-3x mb-1">
+<div *ngIf="item_list?.length > 0; else ElseBlock1" class="container padding-bottom-3x mb-1">
     <!-- List-->
     <div class="table-responsive item-list">
         <table class="table">
@@ -14,11 +14,11 @@
                 <tr>
                     <td>
                         <div *ngIf="item.file; else ElseBlock" class="product-item">
-                            <a class="product-thumb" href="#"><img src="{{ item.file }}" alt="project-image" class="rounded tablet-top"></a>
+                            <a class="product-thumb" href="/item/{{item.id}}"><img src="{{ item.file }}" alt="project-image" class="rounded tablet-top"></a>
                         </div>
                         <ng-template #ElseBlock>
                             <div class="product-item">
-                                <a class="product-thumb" href="#"><img src="/assets/img/no_image.jpg" alt="project-image" class="rounded tablet-top"></a>
+                                <a class="product-thumb" href="/item/{{item.id}}"><img src="/assets/img/no_image.jpg" alt="project-image" class="rounded tablet-top"></a>
                             </div>
                         </ng-template>
                     </td>
@@ -36,3 +36,8 @@
         <a *ngIf="result.next" (click)="next_previous(result.next)" class="next">&#8250;</a>
     </div>
 </div>
+<ng-template #ElseBlock1>
+    <div id="notFound" align="CENTER">
+        <img src="assets/img/empty.png">
+    </div>
+</ng-template>

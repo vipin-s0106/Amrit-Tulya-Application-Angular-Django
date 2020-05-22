@@ -18,6 +18,7 @@ import { InventoryService } from './services/inventory.service';
 import { ImageUrlPipe } from './pipes/image-url.pipe';
 
 
+
 @NgModule({
   declarations: [
     AppComponent,

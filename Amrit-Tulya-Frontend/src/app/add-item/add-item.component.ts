@@ -3,6 +3,7 @@ import { Component, OnInit } from '@angular/core';
 import { InventoryService } from '../services/inventory.service'
 import { ActivatedRoute, Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-add-item',
   templateUrl: './add-item.component.html',
@@ -10,7 +11,8 @@ import { ActivatedRoute, Router } from '@angular/router';
 })
 export class AddItemComponent implements OnInit {
 
-  public item_data = {"name":null,"description":null,"price":null,"file":null}
+  public item_data = {"name":"","description":"","price":""}
+  public upload_image: File;
   public message;
   public message_color;
 
@@ -20,8 +22,15 @@ export class AddItemComponent implements OnInit {
   }
 
   addItem(){
-    console.log(this.item_data)
-    this._inv_srv.addItem(this.item_data).subscribe(
+    const uploadData = new  FormData();
+    uploadData.append('name',this.item_data.name)
+    uploadData.append('description',this.item_data.description)
+    uploadData.append('price',this.item_data.price)
+    if (this.upload_image){
+      uploadData.append('file',this.upload_image,this.upload_image.name)
+    }
+    console.log(uploadData)
+    this._inv_srv.addItem(uploadData).subscribe(
       res => {
         console.log(res);
         this.message = "Your Item successfully addded into the list";
@@ -40,7 +49,7 @@ export class AddItemComponent implements OnInit {
   onFileChange(event) {
     if(event.target.files.length > 0) {
       let file = event.target.files[0];
-      this.item_data.file = file;
+      this.upload_image = file;
     }
   }
 
