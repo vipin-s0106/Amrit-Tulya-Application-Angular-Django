@@ -1,0 +1,16 @@
+.jumbotron{
+    color: #f4511e;
+    background-color: white;
+    margin-top:90px !important;
+}
+
+.jumbotron p{
+    color: rgb(23, 23, 78);
+    font-weight: bold;
+}
+
+
+.HomeImage{
+    height: 550px;
+    width:500px
+}

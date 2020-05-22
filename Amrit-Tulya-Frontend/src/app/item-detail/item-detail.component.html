@@ -1,0 +1,29 @@
+<div class="container" >
+    <div class="row list-project">
+        <div *ngIf="item.file; else ElseBlock" class="col-md-5">
+            <img src="{{ item.file | TransalateImageUrl }}" alt="project-image" class="rounded tablet-top">
+        </div>
+        <ng-template #ElseBlock>
+            <div class="col-md-5">
+                <img src="/assets/img/no_image.jpg" alt="project-image" class="rounded tablet-top">
+            </div>
+          </ng-template>
+        <!-- / column -->
+        <div class="col-md-5">
+            <div class="project-info-box mt-0">
+                <h2>{{item.name}}</h2>
+                <hr>
+                <p>{{item.description}}</p>
+            </div>
+            <!-- / project-info-box -->
+            <hr>
+            <div class="project-info-box mb-10">
+                <p><b>Price:</b> {{item.price}} <span class=""></span></p>
+            </div>
+            <!-- / project-info-box -->
+
+            <a  (click)="delete(item.id)" class="btn-get-started scrollto" style="margin-top:10px">Remove</a>
+        </div>
+        <!-- / column -->
+    </div>
+</div>

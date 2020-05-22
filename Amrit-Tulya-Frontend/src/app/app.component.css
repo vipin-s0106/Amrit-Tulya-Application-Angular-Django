@@ -1,0 +1,64 @@
+
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    font-family: "Open Sans", sans-serif;
+    color: rgb(23, 23, 78);
+    background: white;
+  }
+  
+  a {
+    color: rgb(23, 23, 78);
+  }
+  
+  a:hover {
+    color: #fdc134;
+    text-decoration: none;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  /*--------------------------------------------------------------
+  # Header Logo
+  --------------------------------------------------------------*/
+  
+  .logo h1 {
+    font-size: 28px;
+    padding-right:50px;
+    line-height: 1;
+    font-weight: 700;
+    letter-spacing: 4px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .logo h1 a:hover {
+    color: #fdc134;
+    text-decoration: none;
+  }
+
+  .logo h1 a span{
+    color: #fdc134;
+  }
+
+
+  /*--------------------------------------------------------------
+  # Navigation Menu
+  --------------------------------------------------------------*/
+  .navbar {
+    border: 0;
+    border-radius: 0;
+    margin-bottom: 0;
+    font-size: 12px;
+    letter-spacing: 5px;
+  }
+  .navbar-nav  li a {
+    color: rgb(23, 23, 78);
+    font-weight: 650;
+  }
+
+  .navbar-nav  li a:hover {
+    color: #fdc134 !important;
+  }

@@ -14,7 +14,7 @@ class Inventory(models.Model):
 	name = models.CharField(_('name'),null=False,blank=False,max_length=150)
 	description = models.CharField(_('description'),null=False,blank=False,max_length=1000)
 	price = models.FloatField(_('price'),null=False,blank=False)
-	file = models.FileField(_('img'), null=True, blank=True, upload_to=upload_inventory_item_image)
+	file = models.FileField(_('file'), null=True, blank=True, upload_to=upload_inventory_item_image)
 	timestamp = models.DateTimeField(_('timestamp'), default=timezone.now)
 
 	def __str__(self):

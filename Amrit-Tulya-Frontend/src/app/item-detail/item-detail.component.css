@@ -1,0 +1,39 @@
+.container{
+    margin-left: 200px;
+    margin-top: 80px;
+}
+
+h2{
+    color: midnightblue;
+}
+
+p {
+    font-weight: bold;
+}
+
+
+img {
+    max-width: 450px;
+    max-height: 400px
+}
+.rounded {
+    border-radius: 5px !important;
+}
+
+
+.btn-get-started {
+    color: white;
+    border-radius: 50px;
+    padding: 8px 35px 10px 35px;
+    border: 2px solid tomato;
+    transition: all ease-in-out 0.3s;
+    display: inline-block;
+    background: tomato;
+    outline-width: 0;
+    font-weight: bold;
+  }
+  
+  .btn-get-started:hover {
+    border: 4px solid tomato;
+    text-decoration: none;
+  }

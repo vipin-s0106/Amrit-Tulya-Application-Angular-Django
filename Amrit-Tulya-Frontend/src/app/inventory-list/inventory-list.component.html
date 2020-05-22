@@ -1,0 +1,38 @@
+<div class="container padding-bottom-3x mb-1">
+    <!-- List-->
+    <div class="table-responsive item-list">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Product</th>
+                    <th class="text-center">Name</th>
+                    <th class="text-center">Price</th>
+                    <th class="text-center"></th>
+                </tr>
+            </thead>
+            <tbody *ngFor="let item of item_list">
+                <tr>
+                    <td>
+                        <div *ngIf="item.file; else ElseBlock" class="product-item">
+                            <a class="product-thumb" href="#"><img src="{{ item.file }}" alt="project-image" class="rounded tablet-top"></a>
+                        </div>
+                        <ng-template #ElseBlock>
+                            <div class="product-item">
+                                <a class="product-thumb" href="#"><img src="/assets/img/no_image.jpg" alt="project-image" class="rounded tablet-top"></a>
+                            </div>
+                        </ng-template>
+                    </td>
+                    <td class="text-center">
+                        <a href="/item/{{item.id}}">{{item.name}}</a>
+                    </td>
+                    <td class="text-center text-lg text-medium">{{item.price}}</td>
+                    <td class="text-center"><a  (click)="delete(item.id)" class="btn-get-started scrollto" style="margin-top:10px">Remove</a></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="item-list-footer" align="center" >
+        <a *ngIf="result.previous" (click)="next_previous(result.previous)" class="previous">&#8249;</a>
+        <a *ngIf="result.next" (click)="next_previous(result.next)" class="next">&#8250;</a>
+    </div>
+</div>

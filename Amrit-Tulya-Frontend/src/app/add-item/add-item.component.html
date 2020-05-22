@@ -1,0 +1,32 @@
+
+<section id="add-item">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class=" col-lg-6 py-5 py-lg-0 order-2 order-lg-1" data-aos="fade-right">
+          <h1>Add New Item to Inventory List</h1>
+          <form #RegisterForm="ngForm">
+            <div *ngIf="message" [style.color]="message_color" style="margin-left:10px;font-style: bold;">{{ message }}</div>
+            <input [(ngModel)]="item_data.name"  type="text" name="name" placeholder="Enter Item Name" required #name="ngModel"><br>
+            <div *ngIf="name.errors?.required && name.touched">
+              <small style="color:Tomato;margin-left:10px;">item name is required.</small>
+            </div>
+            <input [(ngModel)]="item_data.description" type="text" name="description" placeholder="Enter Item Desc" required #description="ngModel"><br>
+            <div *ngIf="description.errors?.required && description.touched">
+              <small style="color:Tomato;margin-left:10px;">description is required.</small>
+            </div>
+            <input [(ngModel)]="item_data.price" type="number" name="price" placeholder="Enter Item Price" required #price="ngModel">
+            <div *ngIf="price.errors?.required && price.touched">
+              <small style="color:Tomato;margin-left:10px;">price is required.</small>
+            </div>
+            <input (change)="onFileChange($event)"  type="file" name="img" #img>
+            <br>
+            
+            <a  (click)="addItem()" class="btn-get-started scrollto" style="margin-top:10px">ADD</a>
+          </form>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left">
+          <img src="assets/img/add_inventory.jpg" alt="">
+        </div>
+       </div>
+    </div> 
+</section>
