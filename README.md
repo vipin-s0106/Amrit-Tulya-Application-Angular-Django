@@ -1,11 +1,11 @@
 # Amrit-Tulya-Application-Angular-Django
 This Application is manage by admin to add the items on their list, delete the items, list all items on Dashboard.
 
-#Installing Requirements
+# Installing Requirements
 1) Python
 2) Angular CLI
 
-#Installing Libreries
+# Installing Libreries
 1) Go to AmritTulya Backend Folder 
 2) Open Terminal and run the below command
 > pip install -r requiremetns.txt
@@ -15,10 +15,10 @@ This Application is manage by admin to add the items on their list, delete the i
 # Running the Backend Server
 1) Go to AmritTulya Backend Folder 
 2) Open Terminal and run the below command
->python manage.py runserver
+> python manage.py runserver
 
 
-#Running the Frontend Server
+# Running the Frontend Server
 1) Go to AmritTulya Backend Folder 
 2) Open Terminal and run the below command
 >ng serve
