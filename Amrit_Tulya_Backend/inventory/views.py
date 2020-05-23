@@ -29,7 +29,6 @@ class InventoryCreateView(APIView):
 	parser_classes = (MultiPartParser,JSONParser)
 	def post(self,request):
 		post_data = request.data
-		print(post_data)
 		serializer = InventorySerializer(data = post_data)
 		if serializer.is_valid():
 			serializer.save()

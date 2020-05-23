@@ -23,7 +23,7 @@ const routes: Routes = [
     component:HomeComponent
   },
   {
-    path: 'inventory',
+    path: 'inventory/list/page/:page_no',
     component:InventoryListComponent},
   {
     path:'item-add',

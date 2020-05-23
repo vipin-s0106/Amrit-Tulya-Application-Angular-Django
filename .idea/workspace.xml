@@ -3,8 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="d8857817-9985-4494-b663-d4a1e811729f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Amrit_Tulya_Backend/Amrit_Tulya_Backend/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/Amrit_Tulya_Backend/Amrit_Tulya_Backend/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amrit-Tulya-Frontend/src/app/add-item/add-item.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Amrit-Tulya-Frontend/src/app/add-item/add-item.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amrit-Tulya-Frontend/src/app/app-routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Amrit-Tulya-Frontend/src/app/app-routing.module.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amrit-Tulya-Frontend/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Amrit-Tulya-Frontend/src/app/app.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amrit-Tulya-Frontend/src/app/inventory-list/inventory-list.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/Amrit-Tulya-Frontend/src/app/inventory-list/inventory-list.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amrit-Tulya-Frontend/src/app/inventory-list/inventory-list.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Amrit-Tulya-Frontend/src/app/inventory-list/inventory-list.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amrit-Tulya-Frontend/src/app/services/inventory.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Amrit-Tulya-Frontend/src/app/services/inventory.service.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Amrit_Tulya_Backend/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/Amrit_Tulya_Backend/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Amrit_Tulya_Backend/inventory/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/Amrit_Tulya_Backend/inventory/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Amrit_Tulya_Backend/inventory/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Amrit_Tulya_Backend/inventory/views.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

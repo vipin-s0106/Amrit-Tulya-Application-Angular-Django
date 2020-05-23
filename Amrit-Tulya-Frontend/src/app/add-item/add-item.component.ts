@@ -35,7 +35,6 @@ export class AddItemComponent implements OnInit {
         console.log(res);
         this.message = "Your Item successfully addded into the list";
         this.message_color = "green"
-        
       },
       err => {
         console.log(err);

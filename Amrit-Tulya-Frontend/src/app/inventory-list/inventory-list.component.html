@@ -32,8 +32,8 @@
         </table>
     </div>
     <div class="item-list-footer" align="center" >
-        <a *ngIf="result.previous" (click)="next_previous(result.previous)" class="previous">&#8249;</a>
-        <a *ngIf="result.next" (click)="next_previous(result.next)" class="next">&#8250;</a>
+        <a *ngIf="previous_page_no" href="/inventory/list/page/{{previous_page_no}}" class="previous">&#8249;</a>
+        <a *ngIf="next_page_no" href="/inventory/list/page/{{next_page_no}}" class="next">&#8250;</a>
     </div>
 </div>
 <ng-template #ElseBlock1>

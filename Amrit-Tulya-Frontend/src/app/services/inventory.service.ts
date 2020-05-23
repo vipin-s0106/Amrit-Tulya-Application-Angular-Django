@@ -23,13 +23,15 @@ export class InventoryService {
     return this.http.get(this._baseUrl+this._getInventoryUrl);
   }
 
-  getPaginationList(url): Observable<any>{
-    if (url == null){
-      return this.http.get(this._baseUrl+this._getInventoryUrl);
-    }
-    else{
-      return this.http.get(url);
-    }
+  getPaginationList(page_no): Observable<any>{
+    let url = this._baseUrl+this._getInventoryUrl+"?page="+page_no
+    // if (url == null){
+    //   return this.http.get(this._baseUrl+this._getInventoryUrl);
+    // }
+    // else{
+    //   return this.http.get(url);
+    // }
+    return this.http.get(url);
     
   }
 
