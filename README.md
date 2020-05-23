@@ -27,8 +27,4 @@ This Application is manage by admin to add the items on their list, delete the i
 # To Check for Unit Testing of backend
 1) Go to AmritTulya Backend Folder 
 2) Open Terminal and run the below command
-<<<<<<< HEAD
 > python manage.py test
-=======
-> python manage.py test
->>>>>>> 417ff167cbea3563895e858facb5f55dc357956e
