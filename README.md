@@ -22,3 +22,9 @@ This Application is manage by admin to add the items on their list, delete the i
 1) Go to AmritTulya Backend Folder 
 2) Open Terminal and run the below command
 >ng serve
+
+
+# To Check for Unit Testing of backend
+1) Go to AmritTulya Backend Folder 
+2) Open Terminal and run the below command
+> python manage.py test
